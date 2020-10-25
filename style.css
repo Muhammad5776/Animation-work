@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Raleway:ital,wght@0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.header{
+  height: 1200px;
+
+}
+
+.continer{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 50px;
+ 
+}
+
+.box{
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.400);
+  position: relative;
+  animation-name: toLeft;
+  animation-duration: 2s;
+
+}
+.box-second{
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.400);
+  position: relative;
+  animation-name: toLeft;
+  animation-duration: 3s;
+
+}
+
+.box-img{
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.box-img__img{
+  max-width: 100%;
+  transition: transform 1s;
+  cursor: pointer;
+  
+}
+
+.box-img__img:hover{
+  transform: scale( 1.1);
+
+}
+
+.box-title{
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.box-text{
+  display: flex;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.box-link__messengers{
+  width: 40px;
+  margin-left: 55px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  
+}
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    left: -200px;
+  }
+  50%{
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
